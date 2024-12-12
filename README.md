@@ -31,7 +31,7 @@ curl --location 'http://127.0.0.1:3000/api/assignment/auth/signin' \
     "password":"password@123"
 }'
 ```
-3. Token Verification
+3. Token Authorization
 ```bash
 curl --location --request POST 'http://127.0.0.1:3000/api/assignment/auth/verify' \
 --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzM5ODk5MzgsInJhbmRvbU51bSI6ODQ0NjM2NjczMzAwLCJ1c2VyIjoidmlyYWpsMkBnbWFpbC5jb20ifQ.jcXbQptcFTaO7JE31uIRG-uiLAc_rQhNVLpDN4JXH0U'
