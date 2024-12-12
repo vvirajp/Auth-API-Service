@@ -1,5 +1,5 @@
 # Auth API
-This is an auth API service that uses JWT for authentication
+This is an Auth API service in Go that uses JWT.
 
 ## Command to run locally
 1. Installing all the required packages.
