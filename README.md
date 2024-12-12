@@ -6,7 +6,7 @@ This is an Auth API service in Go that uses JWT.
 ```go
 go mod download
 ```
-3. For running the Auth API service.
+2. For running the Auth API service.
 ```go
 go run .
 ```
@@ -22,7 +22,7 @@ curl --location 'http://127.0.0.1:3000/api/assignment/auth/signup' \
     "confirmPassword":"password@123"
 }' 
 ```
-3. Sign In
+2. Sign In
 ```bash
 curl --location 'http://127.0.0.1:3000/api/assignment/auth/signin' \
 --header 'Content-Type: application/json' \
@@ -31,19 +31,19 @@ curl --location 'http://127.0.0.1:3000/api/assignment/auth/signin' \
     "password":"password@123"
 }'
 ```
-5. Token Authorization
+3. Token Authorization
 ```bash
 curl --location --request POST 'http://127.0.0.1:3000/api/assignment/auth/verify' \
 --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzM5ODk5MzgsInJhbmRvbU51bSI6ODQ0NjM2NjczMzAwLCJ1c2VyIjoidmlyYWpsMkBnbWFpbC5jb20ifQ.jcXbQptcFTaO7JE31uIRG-uiLAc_rQhNVLpDN4JXH0U'
 ```
 
-7. Refresh Token
+4. Refresh Token
 ```bash
 curl --location --request POST 'http://127.0.0.1:3000/api/assignment/auth/refreshToken' \
 --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQwMDc2MzgsInJhbmRvbU51bSI6NTA2OTkzMDc0ODI4LCJ1c2VyIjoidmlyYWpsMkBnbWFpbC5jb21yZWZyZXNodG9rZW4ifQ.9ayc_TmDUYcethQbFEGwEG-QVHIBvWfmClYwubJ9cLU'
 ```
 
-9. Revoke Token
+5. Revoke Token
 ```bash
 curl --location --request POST 'http://127.0.0.1:3000/api/assignment/auth/revokeToken' \
 --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzM5ODk5MzgsInJhbmRvbU51bSI6ODQ0NjM2NjczMzAwLCJ1c2VyIjoidmlyYWpsMkBnbWFpbC5jb20ifQ.jcXbQptcFTaO7JE31uIRG-uiLAc_rQhNVLpDN4JXH0U'
