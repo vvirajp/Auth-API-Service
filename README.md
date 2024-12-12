@@ -4,7 +4,7 @@ This is an auth API service that uses JWT for authentication
 ## Command to run locally
 1. After cloning the repo in your local machine run the following command in terminal to get all the packages.
 ```go
-go mod tidy
+go mod download
 ```
 3. For running the API service run
 ```go
