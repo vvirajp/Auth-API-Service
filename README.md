@@ -27,7 +27,7 @@ curl --location 'http://127.0.0.1:3000/api/assignment/auth/signup' \
 curl --location 'http://127.0.0.1:3000/api/assignment/auth/signin' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "email":"virajl2@gmail.com",
+    "email":"email@gmail.com",
     "password":"password@123"
 }'
 ```
